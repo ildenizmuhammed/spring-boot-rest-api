@@ -1,6 +1,6 @@
 package com.movieSpringBoot.springbootrestapi.repository;
 
-import com.movieSpringBoot.springbootrestapi.user.Movie;
+import com.movieSpringBoot.springbootrestapi.model.Movie;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

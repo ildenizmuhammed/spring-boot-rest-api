@@ -1,23 +1,23 @@
 package com.movieSpringBoot.springbootrestapi.controller;
 
+import com.movieSpringBoot.springbootrestapi.model.Movie;
 import com.movieSpringBoot.springbootrestapi.service.MovieService;
-import com.movieSpringBoot.springbootrestapi.user.Movie;
 import lombok.AllArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static org.springframework.http.HttpStatus.*;
+import static org.springframework.http.HttpStatus.CREATED;
+import static org.springframework.http.HttpStatus.OK;
 
 @RestController
 @RequestMapping("/movies")
 @AllArgsConstructor
-public class MovieCotroller {
+public class MovieController {
 
     private final MovieService movieService;
-    
+
     @GetMapping
     public ResponseEntity<List<Movie>> getMovies(@RequestParam(required = false) String name){
         return new ResponseEntity<>(movieService.getMovies(name), OK);
@@ -48,3 +48,5 @@ public class MovieCotroller {
         return new ResponseEntity<>("deleted successfully",OK);
     }
 }
+
+

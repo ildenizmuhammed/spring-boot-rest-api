@@ -1,4 +1,4 @@
-package com.movieSpringBoot.springbootrestapi.user;
+package com.movieSpringBoot.springbootrestapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

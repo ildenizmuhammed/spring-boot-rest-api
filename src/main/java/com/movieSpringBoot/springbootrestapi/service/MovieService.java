@@ -1,7 +1,7 @@
 package com.movieSpringBoot.springbootrestapi.service;
 
 import com.movieSpringBoot.springbootrestapi.repository.MovieRepository;
-import com.movieSpringBoot.springbootrestapi.user.Movie;
+import com.movieSpringBoot.springbootrestapi.model.Movie;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
